@@ -5,6 +5,8 @@ const cors = require('cors');
 const app = express();
 // Controllers
 const authController = require('./controllers/authController');
+const propertyController = require('./controllers/propertyController');
+const uploadController = require('./controllers/uploadController');
 
 // MongoDB connect
 mongoose.set('strictQuery', false);
@@ -15,6 +17,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/auth', authController);
+app.use('/property', propertyController);
+app.use('/upload', uploadController);
 
 
 // Starting Server

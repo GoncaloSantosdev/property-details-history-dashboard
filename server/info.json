@@ -1,0 +1,29 @@
+{
+    "title": "Beautiful House in the Suburbs",
+    "propertyId": "E5579076",
+    "image": "https://example.com/images/house.jpg",
+    "images": [
+        "https://example.com/images/house1.jpg",
+        "https://example.com/images/house2.jpg",
+        "https://example.com/images/house3.jpg"
+    ],
+    "type": "Apartment",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "garages": 2,
+    "sqft_1": 1963,
+    "sqft_2": 1176,
+    "forSale": true,
+    "price": "$1,549,586",
+    "address": "Thornridge Cir. Syracuse, Connecticut 35624",
+    "description": "This beautiful house is located in a quiet neighborhood...",
+    "tax": "$1340 / 2022",
+    "propertyType": "Single-Family",
+    "buildingAge": 5,
+    "size": 1500,
+    "parking": "Detached 2 Garage, 6 Parking",
+    "basement": false,
+    "possesion": 5,
+    "completeDescription": "This beautiful house is perfect for a family looking for a spacious, comfortable home in a peaceful and safe neighborhood. Featuring three bedrooms and two bathrooms, this single-family home boasts a generous 2,000 square feet of living space, with an additional 500 square feet of space in the finished basement. The house also includes a two-car garage and ample driveway parking for guests.",
+    "createdAt": "2023-03-27T12:00:00.000Z"
+}

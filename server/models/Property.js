@@ -63,7 +63,7 @@ const PropertySchema = new mongoose.Schema({
     },
 
     price: {
-        type: Number,
+        type: String,
         required: true
     },
 
@@ -78,7 +78,7 @@ const PropertySchema = new mongoose.Schema({
     },
 
     tax: {
-        type: Number,
+        type: String,
         required: true
     },
 
@@ -93,7 +93,7 @@ const PropertySchema = new mongoose.Schema({
     },
 
     size: {
-        type: Number,
+        type: String,
         required: true
     },
 
