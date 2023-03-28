@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (min-width: 768px) {
+    .create-tour-btn::before {
+      content: "Create new tour"; /* Add the "+" symbol as a pseudo-element */
+      font-size: 1rem;
+    }
+  }
+  
