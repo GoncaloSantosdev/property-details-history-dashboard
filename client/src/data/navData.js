@@ -1,10 +1,10 @@
-import { HomeIcon } from "@heroicons/react/24/outline"
+import { HomeIcon, CalendarDaysIcon, ClipboardDocumentCheckIcon, ShoppingCartIcon ,BellIcon, ClipboardDocumentIcon, UserPlusIcon } from "@heroicons/react/24/outline"
 
 export const navData = [
     {
       title: 'Dashboard',
       path: '/',
-      icon: HomeIcon,
+      icon: ClipboardDocumentIcon,
       selected: false
     },
     {
@@ -16,31 +16,31 @@ export const navData = [
     {
       title: 'Calendar',
       path: '/',
-      icon: HomeIcon,
+      icon: CalendarDaysIcon,
       selected: false
     },
     {
       title: 'My Clients',
       path: '/',
-      icon: HomeIcon,
+      icon: ClipboardDocumentCheckIcon,
       selected: false
     },
     {
       title: 'MLS Lists',
       path: '/',
-      icon: HomeIcon,
+      icon: ShoppingCartIcon,
       selected: false
     },
     {
       title: 'Notifications',
       path: '/',
-      icon: HomeIcon,
+      icon: BellIcon,
       selected: false
     },
     {
       title: 'Invite & Earn',
       path: '/',
-      icon: HomeIcon,
+      icon: UserPlusIcon,
       selected: false
     },
 ]

@@ -2,7 +2,7 @@ import React from 'react';
 // React Router
 import { Routes, Route } from 'react-router-dom';
 // Pages
-import { Properties, SingleProperty } from './pages'
+import { Login, Properties, Register, SingleProperty } from './pages'
 // Components
 import { Header, Sidebar } from './components';
 
@@ -18,6 +18,8 @@ const App = () => {
           <Header />
 
           <Routes>
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
             <Route path='/' element={<Properties />} />
             <Route path='/:id' element={<SingleProperty /> } />
           </Routes>
