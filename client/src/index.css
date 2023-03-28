@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (min-width: 768px) {
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
     .create-tour-btn::before {
       content: "Create new tour"; /* Add the "+" symbol as a pseudo-element */
       font-size: 1rem;
     }
   }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
   
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }

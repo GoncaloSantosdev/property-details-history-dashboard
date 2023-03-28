@@ -10,12 +10,12 @@ import logo from '../../assets/logo.svg';
 
 const Sidebar = () => {
   return (
-    <div className='pt-11 px-4'>
+    <div className='pt-11 px-4 fixed h-screen'>
       <img src={logo} alt="Logo" />
 
       <div className='mt-6'>
         <button className='w-full flex items-center justify-center px-4 py-4 bg-[#2E63F6] text-white rounded create-tour-btn'>
-          <PlusIcon className='w-5 h-5 md:ml-2'/>
+          <PlusIcon className='w-5 h-5 lg:ml-2'/>
         </button>        
       </div>
 
@@ -23,7 +23,7 @@ const Sidebar = () => {
         {navData.map((navItem, index) => (
           <li key={index} className={`list-none flex items-center justify-center md:justify-start md:px-2 py-4 cursor-pointer w-full ${navItem.selected ? 'bg-[#2E63F6] text-white rounded' : ''}`}>
             <span className='w-6 h-6'>{React.createElement(navItem.icon)}</span>
-            <Link to={navItem.path} className={`hidden md:block ml-2 ${navItem.selected ? 'text-white' : 'text-[#555B67]'}`}>{navItem.title}</Link>
+            <Link to={navItem.path} className={`hidden lg:block ml-2 ${navItem.selected ? 'text-white' : 'text-[#555B67]'}`}>{navItem.title}</Link>
           </li>
         ))}
       </nav>

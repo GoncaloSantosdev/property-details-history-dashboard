@@ -35,7 +35,7 @@ const Login = () => {
       <div className="w-full bg-white rounded-lg shadow border border-gray-300">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl">
-            Log in into your account
+            Log in into your account - Demo Credentials (user123@gmail.com, 123123)
           </h1>
           <form className="space-y-4 md:space-y-6" onSubmit={handleLogin}>
             <div>

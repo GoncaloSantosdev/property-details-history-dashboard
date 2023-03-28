@@ -1,16 +1,17 @@
 import React from 'react';
 // React Router
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../../redux/authSlice';
 // React icons
 import { BellIcon, ArrowRightOnRectangleIcon, MagnifyingGlassIcon, Cog6ToothIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
-const Header = () => {
+const Header = ({ allProperties }) => {
   const {user} = useSelector((state) => state.auth);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const location = useLocation();
 
   const handleLogout = () => {
     dispatch(logout())
@@ -20,7 +21,7 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center pt-11'>
       <div className='hidden md:block'>
-        <h1 className='text-xl'>Real Estate Dashboard</h1>
+        <h1 className='text-xl'>{location.pathname}</h1>
       </div>
 
       <div className='flex items-center justify-end flex-1'>

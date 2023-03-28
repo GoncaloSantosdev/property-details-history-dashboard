@@ -1,8 +1,12 @@
 import React from 'react';
+// Components
+import PropertiesList from '../../components/PropertiesList';
 
-const Properties = () => {
+const Properties = ({ allProperties }) => {
   return (
-    <div>Properties</div>
+    <section>
+      <PropertiesList allProperties={allProperties}/>
+    </section>
   )
 }
 
