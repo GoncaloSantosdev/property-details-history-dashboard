@@ -16,10 +16,13 @@ mongoose.connect(process.env.MONGO_URL);
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/images', express.static('public/images'))
+
 app.use('/auth', authController);
 app.use('/property', propertyController);
 app.use('/upload', uploadController);
 
 
 // Starting Server
-app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`)); 
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log('Server has been started'));
